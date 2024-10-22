@@ -45,6 +45,11 @@ html, body {
     overflow: hidden; /* Prevents scrolling */
 }
 
+.title_section
+{
+
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -64,8 +69,9 @@ body {
     background-color: #f0ede7; /* Center content background color */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
     font-family: Arial, sans-serif;
+    z-index: 1;
 }

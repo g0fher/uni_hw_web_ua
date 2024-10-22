@@ -16,18 +16,18 @@ html, body {
 }
 
 .side_pannel {
-    background-color: rgb(48, 48, 48);;
+    background-color: #0f0f0f;
     padding: 20px;
 }
 
 .content {
-    background-color: rgb(48, 48, 48);;
+    background-color: #0f0f0f;
     padding: 20px;
 }
 
 .header {
     grid-column: 1 / span 2;
-    background-color: rgb(48, 48, 48);
+    background-color: #0f0f0f;
     text-align: center;
     padding: 10px;
     display: grid;
@@ -35,10 +35,16 @@ html, body {
     /* height: 100%; */
 }
 
-.account img
+.profile
 {
-    height: 39px;
+    margin-left: 35px;
+    height: 40px;
     border-radius: 50%;
+}
+
+.new_vieo
+{
+    height: 20px;
 }
 
 .account, .search, .logo
@@ -69,6 +75,11 @@ html, body {
     height: 33px;
 }
 
+.menu_button img
+{
+    height: 20px;
+}
+
 .logo a, .menu_button
 {
     border: none; 
@@ -81,8 +92,8 @@ html, body {
 {
     width: 50%;
     height: 100%;
-    border-radius: 16px;
-    height: 32px;
+    border-radius: 20px;
+    height: 100%;
     border: solid rgba(218, 218, 218, 0.348) 0.5px;
     display: flex;
     align-items: center;
@@ -96,7 +107,7 @@ html, body {
     border: none;
     outline: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .side_pannel div
@@ -113,7 +124,11 @@ html, body {
 {
     height: 20px;
     margin-right: 20px;
-    margin-left: 15px;
+}
+
+.side_pannel div span
+{
+    margin-right: 15px;
 }
 
 .side_pannel_button
@@ -126,9 +141,10 @@ html, body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: .95rem;
     width: 100%;
     height: 100%;
+    padding-left: 15px;
 }
 
 .side_pannel_button:hover
@@ -146,3 +162,13 @@ html, body {
     background-color: rgba(218, 218, 218, 0.348);
 
 }
+
+
+[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-image: url(res/menu_white2.png);
+    background-size: 20px 20px;
+  }

@@ -78,6 +78,7 @@ html, body {
 .menu_button img
 {
     height: 20px;
+    width: 20px;
 }
 
 .logo a, .menu_button

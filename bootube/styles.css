@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +13,7 @@ html, body {
 
 .grid_cont {
     display: grid;
-    grid-template-columns: 15% 85%;  /* 2 columns */
+    grid-template-columns: 13% 87%;  /* 2 columns */
     grid-template-rows: auto 1fr;   /* 1 row for header, rest for content */
     height: 100vh;
 }
@@ -20,10 +23,42 @@ html, body {
     padding: 20px;
 }
 
-.content {
+.content_grid {
     background-color: #0f0f0f;
     padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
 }
+
+.video
+{
+    color: white;
+}
+
+.thumb
+{
+    width: 19rem;
+    border-radius: 10px;
+}
+
+.details
+{
+    margin-top: 10px;
+    width: 19rem;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 60px;
+}
+
+.avatar
+{
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
 
 .header {
     grid-column: 1 / span 2;
@@ -44,7 +79,7 @@ html, body {
 
 .new_vieo
 {
-    height: 20px;
+    width: 20px;
 }
 
 .account, .search, .logo
@@ -156,7 +191,7 @@ html, body {
 
 .side_pannel div
 {
-    height: 40px;
+    height: 45px;   
 }
 
 .side_pannel div a
@@ -166,8 +201,15 @@ html, body {
 
 .side_pannel_icon
 {
-    height: 20px;
+    /* height: 20px; */
+    width: 20px;
     margin-right: 20px;
+}
+
+.side_pannel_icon_2
+{
+    margin-right: 20px;
+    height: 20px;
 }
 
 .side_pannel div span
@@ -195,6 +237,7 @@ html, body {
 .side_pannel_button:hover
 {
     background-color: #c9c9c958;
+    /* transition-duration: 20ms; */
 }
 
 .side_pannel_button p
@@ -216,11 +259,29 @@ html, body {
 }
 
 
-[type="search"]::-webkit-search-cancel-button {
+[type="search"]::-webkit-search-cancel-button
+{
     -webkit-appearance: none;
     appearance: none;
     height: 20px;
     width: 20px;
-    background-image: url(res/menu_white2.png);
+    background-image: url("res/white_close.png");
     background-size: 20px 20px;
-  }
+}
+
+
+.bottom_text
+{
+    color: rgb(187, 187, 187);
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.rights
+{
+    margin-left: 15px;
+    margin-top: 10px;
+    color: rgb(134, 134, 134);
+    font-size: 0.8rem;
+}

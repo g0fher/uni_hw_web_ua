@@ -1,6 +1,8 @@
 const display = document.getElementById('display');
 const keys = document.querySelectorAll('.key');
 
+let is_caps = false;
+
 console.log(keys);
 
 keys.forEach(key => {
@@ -15,6 +17,18 @@ keys.forEach(key => {
         if (keyValue === 'Enter') 
         {
             display.textContent += "\n";
+        }
+        else if (keyValue === "CapsLock")
+        {
+            is_caps = !is_caps;
+            if (is_caps)
+            {
+                key.style.borderColor = 'lightgreen';    
+            }
+            else
+            {
+                key.style.borderColor = '';    
+            }
         }
         else if (keyValue === "")
         {
@@ -41,7 +55,14 @@ keys.forEach(key => {
         }
         else
         {
-            display.textContent += keyValue;
+            if (!is_caps)
+            {
+                display.textContent += keyValue.toLocaleLowerCase();
+            }
+            else
+            {
+                display.textContent += keyValue;
+            }
         }
     });
 });

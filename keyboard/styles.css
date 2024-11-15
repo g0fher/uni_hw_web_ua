@@ -1,0 +1,101 @@
+/* Базові стилі для клавіатури */
+.keyboard {
+    display: grid;
+    gap: 5px;
+    padding: 10px;
+    background-color: #d7d7d7;
+    border-radius: 10px;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    zoom: 2;
+}
+
+.key_row
+{
+    display: flex;
+    gap: 8px;
+}
+
+.key {
+    background-color: #1a1a1a;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    /* padding: 10px; */
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 2px 1px black;
+    color: white;
+    transform-origin: center;
+}
+
+.key_fkeys
+{
+    height: 25px;
+    padding: 2px;
+    width: 35px;
+    font-size: 8px;
+}
+
+.esc
+{
+    width: 40px;
+    font-size: 8px;
+    /* text-align: left; */
+}
+
+.tab
+{
+    width: 66px;
+}
+
+.caps
+{
+    width: 77px;
+}
+
+.shift
+{
+    width: 101px;
+}
+
+.space
+{
+    width: 232px;
+}
+
+.tall
+{
+    height: 45px;
+}
+
+.ctrll
+{
+    width: 53px;
+}
+
+.tab, .caps, .shift, .ctrl
+{
+    font-size: 10px;
+}
+
+.arrow
+{
+    width: 44px;
+}
+
+.key:hover
+{
+    border: 1px solid white;
+}
+
+.key:active
+{
+    /* background-color: #aaa; */
+    /* transform: translateY(1px) translateX(1px);  */
+    scale: 0.95;
+    box-shadow: 1px 1px 2px 2px black;
+    /* box-shadow: 0 2px #666; */
+}

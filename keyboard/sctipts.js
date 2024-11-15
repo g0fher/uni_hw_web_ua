@@ -24,6 +24,10 @@ keys.forEach(key => {
         {
             display.textContent = display.textContent.slice(0, -1);
         }
+        else if (keyValue === "Delete")
+        {
+            display.textContent = "";
+        }
         else if (keyValue === "↑↓")
         {
             if (Math.round(Math.random()))

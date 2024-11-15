@@ -149,6 +149,11 @@ textarea
     margin-bottom: 50px;
 }
 
+textarea:disabled
+{
+    background-color: white;
+}
+
 .numtall
 {
     height: 88px;

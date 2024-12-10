@@ -1,32 +1,35 @@
 const sprite = document.getElementById('sprite');
 // const button = document.getElementById('randomize');
 const expl_sprite = document.getElementById('explosion');
+const pok_gif = document.getElementById('pokemon-gif');
 // sprite.classList.add('open');
 // setTimeout(() => sprite.classList.remove('open'), 1000);
 
-// const pokemons_names = 
-// [
-//     'Bulbasaur', 'Ivysaur', 'Ivysaur', 'Venusaur', 'Venusaur', 'Charmander', 'Charmander', 'Charmeleon', 'Charmeleon', 'Charizard', 'Charizard', 'Squirtle', 'Squirtle', 'Wartortle', 'Wartortle', 'Blastoise', 'Blastoise', 'Caterpie', 'Caterpie', 'Metapod', 'Metapod', 'Butterfree', 'Butterfree', 'Weedle', 'Weedle', 'Kakuna', 'Kakuna', 'Beedrill', 'Beedrill', 'Pidgey', 'Pidgey', 'Pidgeotto', 'Pidgeotto', 'Pidgeot', 'Pidgeot', 'Rattata', 'Rattata', 'Raticate', 'Raticate', 'Spearow', 'Spearow', 'Fearow', 'Fearow', 'Ekans', 'Ekans', 'Arbok', 'Arbok', 'Pikachu', 'Pikachu', 'Raichu', 'Raichu', 'Sandshrew', 'Sandshrew', 'Sandslash', 'Sandslash', 'Nidoranв™Ђ', 'Nidoranв™Ђ', 'Nidorina', 'Nidorina', 'Nidoqueen', 'Nidoqueen', 'Nidoranв™‚', 'Nidoranв™‚', 'Nidorino', 'Nidorino', 'Nidoking', 'Nidoking', 'Clefairy', 'Clefairy', 'Clefable', 'Clefable', 'Vulpix', 'Vulpix', 'Ninetales', 'Ninetales', 'Jigglypuff', 'Jigglypuff', 'Wigglytuff', 'Wigglytuff', 'Zubat', 'Zubat', 'Golbat', 'Golbat', 'Oddish', 'Oddish', 'Gloom', 'Gloom', 'Vileplume', 'Vileplume', 'Paras', 'Paras', 'Parasect', 'Parasect', 'Venonat', 'Venonat', 'Venomoth', 'Venomoth', 'Diglett', 'Diglett', 'Dugtrio', 'Dugtrio', 'Meowth', 'Meowth', 
-//     'Persian', 'Persian', 'Psyduck', 'Psyduck', 'Golduck', 'Golduck', 'Mankey', 'Mankey', 'Primeape', 'Primeape', 'Growlithe', 'Growlithe', 'Arcanine', 'Arcanine', 'Poliwag', 'Poliwag', 'Poliwhirl', 'Poliwhirl', 'Poliwrath', 'Poliwrath', 'Abra', 'Abra', 
-//     'Kadabra', 'Kadabra', 'Alakazam', 'Alakazam', 'Machop', 'Machop', 'Machoke', 'Machoke', 'Machamp', 'Machamp', 'Bellsprout', 'Bellsprout', 'Weepinbell', 'Weepinbell', 'Victreebel', 'Victreebel', 'Tentacool', 'Tentacool', 'Tentacruel', 'Tentacruel', 'Geodude', 'Geodude', 'Graveler', 'Graveler', 'Golem', 'Golem', 'Ponyta', 'Ponyta', 'Rapidash', 'Rapidash', 'Slowpoke', 'Slowpoke', 'Slowbro', 'Slowbro', 'Magnemite', 'Magnemite', 'Magneton', 'Magneton', "Farfetch'd", "Farfetch'd", 'Doduo', 'Doduo', 'Dodrio', 'Dodrio', 'Seel', 'Seel', 'Dewgong', 'Dewgong', 'Grimer', 'Grimer', 'Muk', 'Muk', 'Shellder', 'Shellder', 'Cloyster', 'Cloyster', 'Gastly', 'Gastly', 'Haunter', 'Haunter', 'Gengar', 'Gengar', 
-//     'Onix', 'Onix', 'Drowzee', 'Drowzee', 'Hypno', 'Hypno', 'Krabby', 'Krabby', 'Kingler', 'Kingler', 'Voltorb', 'Voltorb', 'Electrode', 'Electrode', 'Exeggcute', 'Exeggcute', 'Exeggutor', 'Exeggutor', 'Cubone', 'Cubone', 'Marowak', 'Marowak', 'Hitmonlee', 'Hitmonlee', 'Hitmonchan', 'Hitmonchan', 'Lickitung', 'Lickitung', 'Koffing', 'Koffing', 'Weezing', 'Weezing', 'Rhyhorn', 'Rhyhorn', 'Rhydon', 'Rhydon', 'Chansey', 'Chansey', 'Tangela', 'Tangela', 
-//     'Kangaskhan', 'Kangaskhan', 'Horsea', 'Horsea', 'Seadra', 'Seadra', 'Goldeen', 'Goldeen', 'Seaking', 'Seaking', 'Staryu', 'Staryu', 'Starmie', 'Starmie', 'Mr. Mime', 'Mr. Mime', 'Scyther', 'Scyther', 
-//     'Jynx', 'Jynx', 'Electabuzz', 'Electabuzz', 'Magmar', 'Magmar', 'Pinsir', 'Pinsir', 'Tauros', 'Tauros', 'Magikarp', 'Magikarp', 'Gyarados', 'Gyarados', 'Lapras', 'Lapras', 'Ditto', 'Ditto', 'Eevee', 'Eevee', 'Vaporeon', 'Vaporeon', 'Jolteon', 'Jolteon', 'Flareon', 'Flareon', 'Porygon', 'Porygon', 'Omanyte', 'Omanyte', 'Omastar', 'Omastar', 'Kabuto', 'Kabuto', 'Kabutops', 'Kabutops', 'Aerodactyl', 
-//     'Aerodactyl', 'Snorlax', 'Snorlax', 'Articuno', 'Articuno', 'Zapdos', 'Zapdos', 'Moltres', 'Moltres', 'Dratini', 'Dratini', 'Dragonair', 'Dragonair', 
-//     'Dragonite', 'Dragonite', 'Mewtwo', 'Mewtwo', 'Mew', 'Mew'
-// ];
+const pokemons_names = 
+[
+    'bulbasaur', 'ivysaur', 'ivysaur', 'venusaur', 'venusaur', 'charmander', 'charmander', 'charmeleon', 'charmeleon', 'charizard', 'charizard', 'squirtle', 'squirtle', 'wartortle', 'wartortle', 'blastoise', 'blastoise', 'caterpie', 'caterpie', 'metapod', 'metapod', 'butterfree', 'butterfree', 'weedle', 'weedle', 'kakuna', 'kakuna', 'beedrill', 'beedrill', 'pidgey', 'pidgey', 'pidgeotto', 'pidgeotto', 'pidgeot', 'pidgeot', 'rattata', 'rattata', 'raticate', 'raticate', 'spearow', 'spearow', 'fearow', 'fearow', 'ekans', 'ekans', 'arbok', 'arbok', 'pikachu', 'pikachu', 'raichu', 'raichu', 'sandshrew', 'sandshrew', 'sandslash', 'sandslash', 'nidoranв™ђ', 'nidoranв™ђ', 'nidorina', 'nidorina', 'nidoqueen', 'nidoqueen', 'nidoranв™‚', 'nidoranв™‚', 'nidorino', 'nidorino', 'nidoking', 'nidoking', 'clefairy', 'clefairy', 'clefable', 'clefable', 'vulpix', 'vulpix', 'ninetales', 'ninetales', 'jigglypuff', 'jigglypuff', 'wigglytuff', 'wigglytuff', 'zubat', 'zubat', 'golbat', 'golbat', 'oddish', 'oddish', 'gloom', 'gloom', 'vileplume', 'vileplume', 'paras', 'paras', 'parasect', 'parasect', 'venonat', 'venonat', 'venomoth', 'venomoth', 'diglett', 'diglett', 'dugtrio', 'dugtrio', 'meowth', 'meowth', 
+    'persian', 'persian', 'psyduck', 'psyduck', 'golduck', 'golduck', 'mankey', 'mankey', 'primeape', 'primeape', 'growlithe', 'growlithe', 'arcanine', 'arcanine', 'poliwag', 'poliwag', 'poliwhirl', 'poliwhirl', 'poliwrath', 'poliwrath', 'abra', 'abra', 
+    'kadabra', 'kadabra', 'alakazam', 'alakazam', 'machop', 'machop', 'machoke', 'machoke', 'machamp', 'machamp', 'bellsprout', 'bellsprout', 'weepinbell', 'weepinbell', 'victreebel', 'victreebel', 'tentacool', 'tentacool', 'tentacruel', 'tentacruel', 'geodude', 'geodude', 'graveler', 'graveler', 'golem', 'golem', 'ponyta', 'ponyta', 'rapidash', 'rapidash', 'slowpoke', 'slowpoke', 'slowbro', 'slowbro', 'magnemite', 'magnemite', 'magneton', 'magneton', "farfetch'd", "farfetch'd", 'doduo', 'doduo', 'dodrio', 'dodrio', 'seel', 'seel', 'dewgong', 'dewgong', 'grimer', 'grimer', 'muk', 'muk', 'shellder', 'shellder', 'cloyster', 'cloyster', 'gastly', 'gastly', 'haunter', 'haunter', 'gengar', 'gengar', 
+    'onix', 'onix', 'drowzee', 'drowzee', 'hypno', 'hypno', 'krabby', 'krabby', 'kingler', 'kingler', 'voltorb', 'voltorb', 'electrode', 'electrode', 'exeggcute', 'exeggcute', 'exeggutor', 'exeggutor', 'cubone', 'cubone', 'marowak', 'marowak', 'hitmonlee', 'hitmonlee', 'hitmonchan', 'hitmonchan', 'lickitung', 'lickitung', 'koffing', 'koffing', 'weezing', 'weezing', 'rhyhorn', 'rhyhorn', 'rhydon', 'rhydon', 'chansey', 'chansey', 'tangela', 'tangela', 
+    'kangaskhan', 'kangaskhan', 'horsea', 'horsea', 'seadra', 'seadra', 'goldeen', 'goldeen', 'seaking', 'seaking', 'staryu', 'staryu', 'starmie', 'starmie', 'mr. mime', 'mr. mime', 'scyther', 'scyther', 
+    'jynx', 'jynx', 'electabuzz', 'electabuzz', 'magmar', 'magmar', 'pinsir', 'pinsir', 'tauros', 'tauros', 'magikarp', 'magikarp', 'gyarados', 'gyarados', 'lapras', 'lapras', 'ditto', 'ditto', 'eevee', 'eevee', 'vaporeon', 'vaporeon', 'jolteon', 'jolteon', 'flareon', 'flareon', 'porygon', 'porygon', 'omanyte', 'omanyte', 'omastar', 'omastar', 'kabuto', 'kabuto', 'kabutops', 'kabutops', 'aerodactyl', 
+    'aerodactyl', 'snorlax', 'snorlax', 'articuno', 'articuno', 'zapdos', 'zapdos', 'moltres', 'moltres', 'dratini', 'dratini', 'dragonair', 'dragonair', 
+    'dragonite', 'dragonite', 'mewtwo', 'mewtwo', 'mew', 'mew'
+]
 
-// function showRandomPokemon()
-// {
-//     const randomPokemon = pokemonList[Math.floor(Math.random() * pokemonList.length)];
-//     console.log(randomPokemon);
-//     const pokemonGifUrl = `https://img.pokemondb.net/sprites/black-white/anim/normal/${randomPokemon}.gif`;
-//     // document.getElementById('pokemon-gif').src = pokemonGifUrl;
-// }
+function showRandomPokemon()
+{
+    const randomPokemon = pokemons_names[Math.floor(Math.random() * pokemons_names.length)];
+    const pokemonGifUrl = `https://img.pokemondb.net/sprites/black-white/anim/normal/${randomPokemon}.gif`;
+    pok_gif.src = pokemonGifUrl;
+    console.log(pokemonGifUrl);
+};
+
 
 expl_sprite.addEventListener('click', () =>
 {
-    // showRandomPokemon();
+    pok_gif.style.visibility = 'hidden';
+    showRandomPokemon();
     sprite.classList.remove('open');
     const totalColumns = 27;
 
@@ -53,6 +56,7 @@ expl_sprite.addEventListener('click', () =>
             {        
                 expl_sprite.classList.remove('animate')
                 expl_sprite.classList.add('hold')
+                pok_gif.style.visibility = 'visible';
             }, 1000);
         },
         300);

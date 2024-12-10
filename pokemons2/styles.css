@@ -35,6 +35,12 @@
     background-position: var(--start-x) -360px;
 }
   
+.gif
+{
+    visibility: hidden;
+    margin: -20px 80px;
+}
+
 
 body
 {

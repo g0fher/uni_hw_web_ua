@@ -4,6 +4,6 @@ print(os.getcwd())
 
 with open("python\\names.txt", 'r') as file:
     for line in file:
-        l.append(line.strip())
+        l.append(line.strip().lower())
 
 print(l)

@@ -38,10 +38,10 @@ function showRandomPokemon()
     
     var pokemonGifUrl = ``;
 
-    const isShiny = Math.floor(Math.random() * 20);
+    const isShiny = Math.floor(Math.random() * 10);
     // console.log(isShiny);
 
-    if (isShiny == 19)
+    if (isShiny == 9)
     {
         pokemonGifUrl = `https://img.pokemondb.net/sprites/black-white/anim/shiny/${randomPokemon}.gif`;
         name_desc.textContent = `shiny ${randomPokemon}`;

@@ -53,14 +53,10 @@ Sandshrew
 Sandshrew
 Sandslash
 Sandslash
-Nidoran♀
-Nidoran♀
 Nidorina
 Nidorina
 Nidoqueen
 Nidoqueen
-Nidoran♂
-Nidoran♂
 Nidorino
 Nidorino
 Nidoking
@@ -161,8 +157,6 @@ Magnemite
 Magnemite
 Magneton
 Magneton
-Farfetch'd
-Farfetch'd
 Doduo
 Doduo
 Dodrio
@@ -239,8 +233,6 @@ Staryu
 Staryu
 Starmie
 Starmie
-Mr. Mime
-Mr. Mime
 Scyther
 Scyther
 Jynx

@@ -35,10 +35,25 @@ const pokemons_names =
 function showRandomPokemon()
 {
     const randomPokemon = pokemons_names[Math.floor(Math.random() * pokemons_names.length)];
-    const pokemonGifUrl = `https://img.pokemondb.net/sprites/black-white/anim/normal/${randomPokemon}.gif`;
+    
+    var pokemonGifUrl = ``;
+
+    const isShiny = Math.floor(Math.random() * 20);
+    // console.log(isShiny);
+
+    if (isShiny == 19)
+    {
+        pokemonGifUrl = `https://img.pokemondb.net/sprites/black-white/anim/shiny/${randomPokemon}.gif`;
+        name_desc.textContent = `shiny ${randomPokemon}`;
+        console.log("shiny");
+    } else 
+    {  
+        pokemonGifUrl = `https://img.pokemondb.net/sprites/black-white/anim/normal/${randomPokemon}.gif`;
+        name_desc.textContent = randomPokemon;
+    }
+
     pok_gif.src = pokemonGifUrl;
-    console.log(pokemonGifUrl);
-    name_desc.textContent = randomPokemon;
+    // console.log(pokemonGifUrl);
 };
 
 

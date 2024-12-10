@@ -4,7 +4,7 @@ header nav ul li:first-child
 }
 
 /* Не працює чомусь :/ */
-a:last-child
+header nav ul li:last-child
 {
     color: red;
 }
@@ -43,11 +43,12 @@ div p
 }
 
 /* Я не розумію що це змінює, навіть якщо я поставлю це */
-input:checked
+input[type=checkbox]:checked
 {
     background-color: lightblue;
-    /* color: magenta;
-    padding: 5px; */
+    accent-color: magenta;
+    border: 1px solid black;
+    padding: 5px;
 }
 
 li > a 

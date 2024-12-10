@@ -1,0 +1,79 @@
+.sprite
+{
+    width: 41px;
+    height: 40px;
+    background-image: url("pokeballs.png");
+    background-position: var(--start-x) 0;
+    animation: none;
+    /* scale: 2; */
+}
+  
+@keyframes play-row
+{
+    from {
+        background-position-x: var(--start-x);
+        background-position-y: 0;
+    }
+    to {
+        background-position-x: var(--start-x);
+        background-position-y: -400px;
+    }
+}
+  
+.sprite.animate
+{
+    animation: play-row 1s steps(10) infinite;
+}
+
+.sprite.open
+{
+    background-position: var(--start-x) -400px;
+}
+  
+.sprite.pause
+{
+    background-position: var(--start-x) -360px;
+}
+  
+
+body
+{
+    padding: 100px;
+}
+
+button
+{
+    margin-top: 200px;
+}
+
+
+.sprite2
+{
+	width: 240px;
+	height: 240px;
+    scale: 0.7;
+    margin: -136px -96px;
+}
+
+@keyframes play-sprite2
+{
+	from
+	{
+		background-position: 0 0;
+	}
+	to
+	{
+		background-position: -6240px 0;
+	}
+}
+
+.sprite2.animate
+{
+	background-image: url("Sprite-00sad0ss3.png");
+	animation: play-sprite2 1s steps(26) infinite;
+}
+
+.sprite2.hold
+{
+    background-image: none;
+}

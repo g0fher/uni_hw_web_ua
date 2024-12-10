@@ -4,6 +4,8 @@ const expl_sprite = document.getElementById('explosion');
 const pok_gif = document.getElementById('pokemon-gif');
 // sprite.classList.add('open');
 // setTimeout(() => sprite.classList.remove('open'), 1000);
+const name_desc = document.getElementById('name');
+
 
 const pokemons_names = 
 [
@@ -23,11 +25,13 @@ function showRandomPokemon()
     const pokemonGifUrl = `https://img.pokemondb.net/sprites/black-white/anim/normal/${randomPokemon}.gif`;
     pok_gif.src = pokemonGifUrl;
     console.log(pokemonGifUrl);
+    name_desc.textContent = randomPokemon;
 };
 
 
 expl_sprite.addEventListener('click', () =>
 {
+    name_desc.style.visibility = 'hidden';
     pok_gif.style.visibility = 'hidden';
     showRandomPokemon();
     sprite.classList.remove('open');
@@ -57,6 +61,7 @@ expl_sprite.addEventListener('click', () =>
                 expl_sprite.classList.remove('animate')
                 expl_sprite.classList.add('hold')
                 pok_gif.style.visibility = 'visible';
+                name_desc.style.visibility = 'visible';
             }, 1000);
         },
         300);

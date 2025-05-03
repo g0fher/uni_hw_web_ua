@@ -100,7 +100,7 @@ if (personObject != -1) {
 }
 
 
-// 5.2 (wtf?)
+// 5.2
 function createConverter(factor, offset) {
     return function(valueToConvert) {
         return valueToConvert * factor + offset;

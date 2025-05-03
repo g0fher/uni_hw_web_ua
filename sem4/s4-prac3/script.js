@@ -124,7 +124,7 @@ class Admin extends User {
 
     // це теоретично можна назвати абстракцією, бо неважливо як саме хакається пароль
     hackPassword() {
-        console.log(`Executing... [Database breached] /// Password of ${this._name} is "${this.#password}"`)
+        console.log(`Executing... [Database breached] /// Password of ${this._name} is "${this.#password}"`);
     }
 }
 

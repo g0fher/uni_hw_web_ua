@@ -102,4 +102,68 @@ function collect_skills() {
     }
 }
 
+class Entry {
+    constructor(title, desc) {
+        this._title = title;
+        this._desc = desc;
+    }
+
+    get title() { return this._title; }
+    set title(setTitle) {
+        if (setTitle) {
+            this._title = setTitle;
+        }
+    }
+
+    get desc() { return this._desc; }
+    set desc(setDesc) {
+        if (setDesc) {
+            this._desc = setDesc;
+        }
+    }
+}
+
+class Resume {
+    constructor() {
+
+    }
+}
+
+class PersonalInfo {
+    constructor(name, surname, age, telegram) {
+        this._name = name;
+        this._surname = surname;
+        this._age = age;
+        this._telegram = telegram;
+    }
+
+    get name() { return this._name; }
+    set name(setName) {
+        if (setName) {
+            this._name = setTitle;
+        }
+    }
+
+    get surname() { return this._surname; }
+    set surname(setSurname) {
+        if (setSurname) {
+            this._surname = setSurname;
+        }
+    }
+
+    get age() { return this._age; }
+    set age(setAge) {
+        if (setAge) {
+            this._age = setAge;
+        }
+    }
+
+    get telegram() { return this._telegram; }
+    set telegram(setTelegram) {
+        if (setTelegram) {
+            this._telegram = setTelegram;
+        }
+    }
+}
+
 

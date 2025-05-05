@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs 1-3 CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- <textarea name="test" id="test">Hornet</textarea>
+    <br>
+    <button id="retrieve" onclick="retrieve_text()">Retrieve</button>
+    <button id="save" onclick="save_text()">Save</button> -->
+
+    <div>
+        <h1>CV Contructor</h1>
+        <div class="category">
+            <h2>Personal Info</h2>
+            <div class="input_container">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" maxlength="50">
+            </div>
+            <div class="input_container">
+                <label for="surname">Surame</label><br>
+                <input type="text" name="surname" id="surname" maxlength="50">
+            </div>
+            <div class="input_container">
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" max="150" min="16">
+            </div>
+            <div class="input_container">
+                <label for="telegrm">Telegram @</label><br>
+                <input type="text" name="telegrm" id="telegrm">
+            </div>
+        </div>
+        <div class="category">
+            <h2>Education</h2>
+            <div class="inputs_wrapper" id="edu_wrapper">
+                <div class="input_container">
+                    <label for="title">Title</label><br>
+                    <input type="text" name="title" id="edu_title" maxlength="50"><br>
+                    <label for="desc">Description</label><br>
+                    <input type="text" name="desc" id="edu_desc" maxlength="50">
+                </div>
+            </div>
+            <button id="edu_add" onclick="add_input_container_edu()">Add entry</button>
+        </div>
+        <div class="category">
+            <h2>Skills</h2>
+            <div class="inputs_wrapper" id="skills_wrapper">
+                <div class="input_container">
+                    <label for="title">Title</label><br>
+                    <input type="text" name="title" id="skills_title" maxlength="50"><br>
+                    <label for="desc">Description</label><br>
+                    <input type="text" name="desc" id="skills_desc" maxlength="50">
+                </div>
+            </div>
+            <button id="skills_add" onclick="add_input_container_skills()">Add entry</button>
+        </div>
+    </div>
+</body>
+</html>

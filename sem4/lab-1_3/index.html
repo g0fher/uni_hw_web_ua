@@ -38,25 +38,27 @@
             <h2>Education</h2>
             <div class="inputs_wrapper" id="edu_wrapper">
                 <div class="input_container">
-                    <label for="title">Title</label><br>
-                    <input type="text" name="title" id="edu_title" maxlength="50"><br>
-                    <label for="desc">Description</label><br>
-                    <input type="text" name="desc" id="edu_desc" maxlength="50">
+                    <label>Title</label><br>
+                    <input type="text" name="title_edu" maxlength="50"><br>
+                    <label>Description</label><br>
+                    <input type="text" name="desc_edu" maxlength="50">
                 </div>
             </div>
             <button id="edu_add" onclick="add_input_container_edu()">Add entry</button>
+            <button onclick="collect_edu()">Collect</button>
         </div>
         <div class="category">
             <h2>Skills</h2>
             <div class="inputs_wrapper" id="skills_wrapper">
                 <div class="input_container">
-                    <label for="title">Title</label><br>
-                    <input type="text" name="title" id="skills_title" maxlength="50"><br>
-                    <label for="desc">Description</label><br>
-                    <input type="text" name="desc" id="skills_desc" maxlength="50">
+                    <label>Title</label><br>
+                    <input type="text" name="title_skill" maxlength="50"><br>
+                    <label>Description</label><br>
+                    <input type="text" name="desc_skill" maxlength="50">
                 </div>
             </div>
             <button id="skills_add" onclick="add_input_container_skills()">Add entry</button>
+            <button onclick="collect_skills()">Collect</button>
         </div>
     </div>
 </body>
